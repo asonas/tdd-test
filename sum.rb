@@ -5,8 +5,10 @@
 
 require 'rspec'
 
-def sum; end
+def sum(a, b)
+  a + b
+end
 
 describe "sum" do
-  it { expect(sum(1 + 2)).to eq 3 }
+  it { expect(sum(1 , 2)).to eq 3 }
 end
